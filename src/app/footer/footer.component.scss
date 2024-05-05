@@ -1,0 +1,45 @@
+.footer {
+  background-color: var(--primary-text-color);
+  color: var(--color-white);
+  padding: 3rem;
+  padding-bottom: 1rem;
+  font-family: "Teachers", sans-serif;
+  .foot-nav {
+    padding-left: 0;
+    li {
+      cursor: pointer;
+      list-style: none;
+      margin-bottom: 10px;
+      a {
+        color: var(--color-white);
+        text-decoration: none;
+      }
+      &:hover {
+        a {
+          color: #9b9b9b;
+        }
+      }
+    }
+  }
+  .company-name {
+    margin-bottom: 30px;
+    font-size: 48px;
+    text-wrap: nowrap;
+    letter-spacing: 0.6rem;
+  }
+  .copy-right {
+    margin-top: 50px;
+    color: var(--color-white);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .company-name {
+    font-size: 30px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .company-name {
+    font-size: 25px !important;
+  }
+}

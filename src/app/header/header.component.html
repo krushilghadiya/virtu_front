@@ -1,0 +1,191 @@
+<section class="header-section">
+  <div class="header-title text-center fs-14px primary-font-family">
+    <div>Create unforgettable milestones</div>
+  </div>
+  <div
+    class="company-name-header text-center fs-28px fw-medium primary-text-color"
+  >
+    <div>
+      <img
+        class="company-img mt-2"
+        src="../../assets/182609315_padded_logo.png"
+        alt=""
+        srcset=""
+      />
+    </div>
+  </div>
+  <hr class="container mb-0" />
+  <nav class="navbar nav-header mx-2">
+    <ul class="navbar-nav d-flex flex-row">
+      <li class="nav-item diamond-dropdown">
+        <a
+          class="nav-link primary-font-family dropdown-toggle"
+          data-bs-toggle="dropdown"
+          >Diamonds
+        </a>
+        <div class="dropdown-menu diamond-dropdown-menu position-absolute">
+          <app-diamond></app-diamond>
+        </div>
+      </li>
+      <li class="nav-item engagement-ring-dropdown">
+        <a
+          class="nav-link primary-font-family dropdown-toggle"
+          data-bs-toggle="dropdown"
+          >Engagement Rings
+        </a>
+        <div
+          class="dropdown-menu engagement-ring-dropdown-menu position-absolute"
+        >
+          <app-engagement-ring></app-engagement-ring>
+        </div>
+      </li>
+      <li class="nav-item wedding-ring-dropdown">
+        <a
+          class="nav-link primary-font-family dropdown-toggle"
+          data-bs-toggle="dropdown"
+          >Wedding Rings
+        </a>
+        <div class="dropdown-menu wedding-ring-dropdown-menu position-absolute">
+          <app-wedding-ring></app-wedding-ring>
+        </div>
+      </li>
+      <li class="nav-item jewelry-dropdown">
+        <a class="nav-link v dropdown-toggle" data-bs-toggle="dropdown"
+          >Jewelry
+        </a>
+        <div class="dropdown-menu jewelry-dropdown-menu position-absolute">
+          <app-jewelry></app-jewelry>
+        </div>
+      </li>
+      <li class="nav-item gifts-dropdown">
+        <a
+          class="nav-link primary-font-family dropdown-toggle"
+          data-bs-toggle="dropdown"
+          >Gifts
+        </a>
+        <div class="dropdown-menu gifts-dropdown-menu position-absolute">
+          <app-gifts></app-gifts>
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav d-flex flex-row">
+      <li class="nav-item me-3 nav-icon">
+        <div class="position-relative img-div user-img-div">
+          <img
+            class="icon-img position-absolute user-img-gif"
+            src="../../assets/icons8-user.gif"
+            alt=""
+            srcset=""
+          />
+          <img
+            class="icon-img user-img position-absolute"
+            src="../../assets/icons8-user-50.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </li>
+      <li class="nav-item nav-icon me-3">
+        <div class="position-relative img-div heart-img-div">
+          <img
+            class="icon-img position-absolute heart-img-gif"
+            src="../../assets/wishlist-gif.gif"
+            alt=""
+            srcset=""
+          />
+          <img
+            class="icon-img heart-img position-absolute"
+            src="../../assets/wishlist.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </li>
+      <li class="nav-item nav-icon">
+        <div class="position-relative img-div cart-img-div">
+          <img
+            class="icon-img position-absolute cart-img-gif"
+            src="../../assets/icons8-shopping-cart.gif"
+            alt=""
+            srcset=""
+          />
+          <img
+            class="icon-img cart-img position-absolute"
+            src="../../assets/icons8-shopping-cart-50.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </li>
+    </ul>
+  </nav>
+</section>
+
+<nav class="navbar mobile-nav fixed-top">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+      aria-label="Toggle navigation"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
