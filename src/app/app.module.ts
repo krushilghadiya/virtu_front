@@ -13,6 +13,7 @@ import { WeddingRingComponent } from './header/nav-drop-down/wedding-ring/weddin
 import { JewelryComponent } from './header/nav-drop-down/jewelry/jewelry.component';
 import { GiftsComponent } from './header/nav-drop-down/gifts/gifts.component';
 import { EngagementRingComponent } from './header/nav-drop-down/engagement-ring/engagement-ring.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { EngagementRingComponent } from './header/nav-drop-down/engagement-ring/
     BrowserAnimationsModule,
     AppRoutingModule,
     MatIconModule,
+    MatExpansionModule,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],

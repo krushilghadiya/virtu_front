@@ -28,3 +28,28 @@
     }
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .wedding-ring {
+    flex-direction: column;
+    margin: 0;
+    gap: 10px;
+    align-items: start;
+    .title {
+      margin: 0;
+      font-size: 15px;
+    }
+    .wedding-ring-type {
+      margin: 7px 0;
+      font-size: 13px;
+    }
+    .img-div {
+      width: 318px;
+      height: 198px;
+      img {
+        width: 318px;
+        height: 198px;
+      }
+    }
+  }
+}
