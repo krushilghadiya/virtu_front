@@ -44,6 +44,79 @@ body {
 .secondary-font-family {
   font-family: "Rubik", sans-serif;
 }
+
+.policy-page {
+  .cover-img {
+    height: 300px;
+    position: relative;
+    img {
+      height: inherit;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .overlay {
+      width: 100%;
+      height: inherit;
+      background-color: rgba(0, 35, 82, 0.2);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9;
+      .content {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        font-family: "Playfair Display", serif !important;
+        transform: translate(0%, 50%);
+        color: var(--color-white);
+        height: 100px;
+        h2 {
+          text-wrap: nowrap;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  .page-content {
+    padding: 65px 10px;
+    font-family: "Rubik", sans-serif;
+    p {
+      padding: 10px 0;
+      text-align: justify;
+      span {
+        font-weight: 600;
+      }
+    }
+    .title {
+      font-family: "Teachers", sans-serif !important;
+      margin-bottom: 0;
+      font-weight: 600;
+    }
+    .table {
+      overflow-x: scroll;
+      table {
+        th,
+        td,
+        tr {
+          border: 1px solid gray;
+        }
+        thead {
+          tr {
+            height: 35px;
+            th {
+              background-color: #012f49c2;
+              color: var(--color-white);
+              text-wrap: nowrap;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // #134c46
 
 // #b2566d

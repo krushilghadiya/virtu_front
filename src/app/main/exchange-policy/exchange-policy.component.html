@@ -1,0 +1,141 @@
+<div class="policy-page">
+  <div class="cover-img">
+    <img src="../../../assets/exchange.jpg" alt="" srcset="" />
+    <div class="overlay">
+      <div class="content">
+        <h2>Exchange & Buyback</h2>
+        <h2>Policy</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content container">
+    <p data-aos="fade-in">
+      Presenting the
+      <span>Virtue Star Lifetime Exchange & Buy-Back Guarantee!</span>
+      This comprehensive policy is extended to all purchases* from Virtue Star,
+      ensuring utmost satisfaction. Customers have the option to return their
+      product, accompanied by the original product certificate, for
+      <span>buy-back or exchange</span>, valuated at its prevailing market
+      value. Deductions will be applied for making charges, taxes, and a nominal
+      processing fee of Rs. 1,500. Moreover, any discounts or complimentary
+      gifts received will be factored into the transaction accordingly
+    </p>
+
+    <p data-aos="fade-in">
+      Under the <span>Lifetime Exchange</span> option, the credited value, after
+      deductions, will be added to your <span>Virtue Star account</span>, which
+      can be used towards purchasing any other product. Please note, this value
+      cannot be redeemed for cash. If you opt for
+      <span>Lifetime Buy-Back</span>, the <span>buy-back</span> value will be
+      transferred to you via online bank transfer within 15 business days of
+      receipt of the product.
+    </p>
+
+    <p data-aos="fade-in">
+      <span
+        >Products showing signs of alteration by parties other than Virtue Star
+        will not be eligible for buy-back.</span
+      >
+      We reserve the right to adjust the product value based on quality
+      inspection, providing justification for any changes.
+    </p>
+
+    <p class="title" data-aos="fade-in">
+      The determination of exchange or buy-back value is as follows:
+    </p>
+    <div class="table mb-4" data-aos="fade-in">
+      <table mat-table [dataSource]="dataSource">
+        <ng-container matColumnDef="category">
+          <th mat-header-cell *matHeaderCellDef>Category</th>
+          <td
+            [attr.rowspan]="element.category === 'Diamond Jewellery' ? 2 : 1"
+            mat-cell
+            *matCellDef="let element"
+            [style.display]="element.category ? '' : 'none'"
+          >
+            {{ element.category }}
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="exchangeValue">
+          <th mat-header-cell *matHeaderCellDef>Exchange Value</th>
+          <td mat-cell *matCellDef="let element">
+            <p class="mb-0 p-0">{{ element.exchangeValue }}</p>
+            <p class="mb-0 p-0">{{ element.secondValueOne }}</p>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="buyBackValue">
+          <th mat-header-cell *matHeaderCellDef>Buy Back Value</th>
+          <td mat-cell *matCellDef="let element">
+            <p class="mb-0 p-0">{{ element.buyBackValue }}</p>
+            <p class="mb-0 p-0">{{ element.secondValueTwo }}</p>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+    </div>
+
+    <p class="title" data-aos="fade-in">Additional Notes:</p>
+    <ul data-aos="fade-in">
+      <li>
+        A loss of the original product certificate will incur a deduction of Rs.
+        1500.
+      </li>
+      <li>
+        Customers must provide the original invoice and certificate for exchange
+        or buyback transactions.
+      </li>
+      <li>
+        Products purchased from stores other than VirtueStars Stores are not
+        eligible for exchange or buyback.
+      </li>
+      <li>
+        Buyback is not applicable to Baguettes, Tapered, Choki and diamonds made
+        on demand.
+      </li>
+      <li>
+        Exchange and buyback services do not extend to Polki, Pearl, and Colored
+        Stones.
+      </li>
+      <li>
+        Discounts applied during the original purchase on the metal or stone
+        value will be adjusted from the current market price during buyback or
+        exchange. Additionally, any e-Points utilized during the purchase will
+        be deducted from the Lifetime Exchange value.
+      </li>
+      <li>
+        Buyback services are applicable to products purchased up to a value of
+        Rs. 4,99,999/-.
+      </li>
+      <li>
+        For products purchased through the EMI system, an amount equivalent to
+        the remaining unpaid EMI will be deducted, in addition to the
+        aforementioned deductions. Shipping and Insurance:
+      </li>
+    </ul>
+
+    <p data-aos="fade-in">
+      Customers are responsible for return shipping costs. A deduction of Rs.
+      1,000/- or actual delivery charges (whichever is higher) will apply.
+    </p>
+
+    <p class="title" data-aos="fade-in">Policy Changes:</p>
+    <p class="pt-0" data-aos="fade-in">
+      Virtue Star reserves the right to amend these policies. It is recommended
+      to review them regularly. Changes will be effective immediately upon
+      publication on our website: www.virtuestar.com Material changes will be
+      accompanied by a notification.
+    </p>
+
+    <p class="title" data-aos="fade-in">Customer Support:</p>
+    <p class="pt-0" data-aos="fade-in">
+      We strive to enhance our services. Your feedback is valuable. Reach us at
+      <span>{{ mail }}</span> or <span>{{ mobileNumber }}</span> from 11 am to 4
+      pm (Monday to Saturday).
+    </p>
+  </div>
+</div>

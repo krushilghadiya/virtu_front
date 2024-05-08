@@ -7,15 +7,13 @@
   .foot-nav {
     padding-left: 0;
     li {
-      cursor: pointer;
       list-style: none;
       margin-bottom: 10px;
       a {
+        cursor: pointer;
         color: var(--color-white);
         text-decoration: none;
-      }
-      &:hover {
-        a {
+        &:hover {
           color: #9b9b9b;
         }
       }

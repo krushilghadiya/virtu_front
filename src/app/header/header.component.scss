@@ -1,4 +1,6 @@
 .header-section {
+  z-index: 11;
+  background: var(--color-white);
   .header-title {
     padding: 7px 0;
     border-bottom: 1px solid #ebebeb;
@@ -18,9 +20,9 @@
     .nav-item {
       .dropdown-menu {
         border-top: 0px;
-        left: 0;
+        left: -10px;
         top: 41px;
-        right: 0;
+        right: -10px;
         font-family: "Teachers", sans-serif;
       }
       .diamond-dropdown-menu {

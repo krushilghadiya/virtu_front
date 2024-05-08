@@ -6,19 +6,23 @@
           <h3>Policies</h3>
           <ul class="foot-nav">
             <li>
-              <a href=""> Exchange &amp; Buy Back Policies </a>
+              <a (click)="navigation('exchange-policy')">
+                Exchange &amp; Buy Back Policies
+              </a>
             </li>
             <li>
-              <a href=""> Shipping Policies </a>
+              <a (click)="navigation('shipping-policy')"> Shipping Policies </a>
             </li>
             <li>
-              <a href=""> Return Policies </a>
+              <a (click)="navigation('return-policy')"> Return Policies </a>
             </li>
             <li>
-              <a href=""> Terms &amp; Conditions </a>
+              <a (click)="navigation('terms-condition')">
+                Terms &amp; Conditions
+              </a>
             </li>
             <li>
-              <a href=""> Privacy Policy </a>
+              <a (click)="navigation('privacy-policy')"> Privacy Policy </a>
             </li>
           </ul>
         </div>
@@ -46,20 +50,15 @@
           <h3>Learn</h3>
           <ul class="foot-nav">
             <li>
-              <a href=""> About Us </a>
+              <a (click)="navigation('about-us')"> About Us </a>
             </li>
             <li>
-              <a href=""> About Lab Diamonds </a>
-            </li>
-
-            <li>
-              <a href=""> FAQs </a>
+              <a (click)="navigation('about-lab-diamond')">
+                About Lab Diamonds
+              </a>
             </li>
             <li>
-              <a href=""> Franchise Enquiry </a>
-            </li>
-            <li>
-              <a href="" target="_blank"> Ring Size Guide </a>
+              <a (click)="navigation('ring-size-guide')"> Ring Size Guide </a>
             </li>
           </ul>
         </div>
@@ -81,7 +80,7 @@
           <mat-icon> mail_outline</mat-icon>
         </div>
         <div class="d-flex">
-          <p class="mb-0">{{ mailId }}</p>
+          <p class="mb-0">{{ mail }}</p>
         </div>
       </div>
       <div class="d-flex gap-2 align-items-center">
@@ -89,7 +88,7 @@
           <mat-icon> call</mat-icon>
         </div>
         <div class="d-flex">
-          <p class="mb-0">+91 1234567890</p>
+          <p class="mb-0">{{ mobileNumber }}</p>
         </div>
       </div>
     </div>
