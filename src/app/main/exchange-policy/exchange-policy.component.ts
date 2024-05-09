@@ -44,12 +44,12 @@ export class ExchangePolicyComponent {
       secondValueTwo: '(on buy back date)',
     },
   ];
-  displayedColumns = ['category', 'exchangeValue', 'buyBackValue'];
+  displayedColumns = ['exchangeValue', 'category', 'buyBackValue'];
 
   constructor(private sharedService: SharedService) {}
 
   ngOnInit() {
-    this.mail = this.sharedService.mail
-    this.mobileNumber = this.sharedService.mobileNumber
+    this.mail = this.sharedService.mail;
+    this.mobileNumber = this.sharedService.mobileNumber;
   }
 }

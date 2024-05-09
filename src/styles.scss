@@ -64,14 +64,18 @@ body {
       left: 0;
       z-index: 9;
       .content {
+        text-align: center;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
         position: absolute;
         top: 50%;
-        left: 5%;
+        left: 50%;
         font-family: "Playfair Display", serif !important;
-        transform: translate(0%, 50%);
+        transform: translate(-50%, -50%);
         color: var(--color-white);
         height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         h2 {
           text-wrap: nowrap;
           font-size: 30px;
@@ -95,6 +99,8 @@ body {
       font-weight: 600;
     }
     .table {
+      margin: auto;
+      max-width: 740px;
       @media only screen and (max-width: 425px) {
         overflow-x: scroll;
       }
@@ -138,6 +144,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 8px;
+  height: 4px;
 }
 
 /* Track */

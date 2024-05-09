@@ -1,5 +1,6 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { SharedService } from '../shared/shared.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,18 @@ import { SharedService } from '../shared/shared.service';
 export class HeaderComponent {
   @ViewChild('header') header!: ElementRef;
 
-  constructor(private sharedService: SharedService) {}
+  constructor(private sharedService: SharedService, private router: Router) {}
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    this.sharedService.headerHeight.next(
+      this.header.nativeElement.clientHeight
+    );
+  }
+
+  redirect(): void {
+    this.router.navigate(['/']);
+  }
 
   ngAfterViewInit() {
     this.sharedService.headerHeight.next(
